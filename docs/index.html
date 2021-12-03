@@ -20,7 +20,7 @@
         userAgentElement.innerText = "window.navigator.userAgent is not supported."
       }
       if (window.navigator.userAgentData) {
-        userAgentDataElement.innerText = window.navigator.userAgent
+        userAgentDataElement.innerText = JSON.stringify(window.navigator.userAgentData.toJSON())
       } else {
         userAgentDataElement.innerText = "window.navigator.userAgentData is not supported."
       }
