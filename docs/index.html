@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+  </head>
+  <body>
+    <p id="user-agent-value"></p>
+    <p id="user-agent-data-value"></p>
+    <script>
+      var userAgentElement = document.getElementById("user-agent-value")
+      var userAgentDataElement = document.getElementById("user-agent-data-value")
+      if (window.navigator.userAgent) {
+        userAgentElement.innerText = window.navigator.userAgent
+      } else {
+        userAgentElement.innerText = "window.navigator.userAgent is not supported."
+      }
+      if (window.navigator.userAgentData) {
+        userAgentDataElement.innerText = window.navigator.userAgent
+      } else {
+        userAgentDataElement.innerText = "window.navigator.userAgentData is not supported."
+      }
+    </script>
+  </body>
+</html>
